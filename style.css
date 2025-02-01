@@ -1,0 +1,668 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Jua', sans-serif;
+}
+
+header img {
+    margin-top: 3em;
+    width: 88px;
+    height: 54px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+
+img {
+    display: block;
+}
+
+main img {
+    position: relative;
+}
+
+.bovenste-balk {
+    position: relative;
+    text-align: center;
+}
+
+.bovenste-balk img {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.nav-menu {
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 35px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.nav-menu a:nth-child(2) {
+    left: 8px;
+}
+
+a {
+    color: white;
+    font-family: Jua;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    z-index: 10;
+    width: 100px;
+}
+
+.nav-menu a:hover {
+    color: #3F8ABC;
+}
+
+.nav-menu a:nth-child(1) {
+    position: relative;
+    top: 5px;
+    left: 2em
+}
+
+.nav-menu a:nth-child(2) {
+    position: relative;
+    top: 20px;
+}
+
+.nav-menu a:nth-child(3) {
+    position: relative;
+    top: 20px;
+    right: 2em;
+}
+
+h1 {
+    color: #1D5C9B;
+    font-family: 'Jua', sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-top: 1em;
+}
+
+p {
+    color: #3F8ABC;
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 1em;
+    width: 90%;
+    margin-top: -2px;
+}
+
+
+.lijn {
+    display: block;
+    margin: 20px auto;
+    width: 92%;
+    height: auto;
+}
+
+
+.vierkant {
+    width: 320px;
+    height: 385px;
+    border-radius: 17px;
+    border: 1px solid rgba(0, 0, 0, 0.30);
+    background: rgba(96, 175, 228, 0.24);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin: 20px auto;
+}
+
+.afbeelding {
+    width: 316px;
+    height: 180px;
+    border-radius: 28px;
+    margin-bottom: 15px;
+}
+
+.vierkant h2 {
+    color: #2064A8;
+    text-align: center;
+    font-family: Jua;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 124.994%;
+    width: 191px;
+    height: 200px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.vierkant p {
+    width: 322px;
+    height: 2000px;
+    color: #5888B8;
+    font-family: Jua;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 124.994%;
+    text-align: center;
+    margin-top: 0;
+}
+
+.Middelste-balk {
+    margin-top: 3.5em;
+}
+
+.lijnen svg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.Middelste-balk {
+    position: relative;
+    width: 375px;
+    height: 110px;
+}
+
+.Middelste-balk img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overheen-tekst {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #4482B9;
+    font-family: Jua, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 124.994%;
+    width: 90%;
+}
+
+.knoppen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 5em;
+}
+
+.knop-item {
+    position: relative;
+    display: block;
+    width: 250px;
+    height: 70px;
+    margin-top: 5px;
+}
+
+.knop {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    fill: #B8D9EF;
+    stroke-width: 1px;
+    stroke: rgba(32, 100, 168, 0.50);
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+}
+
+.knop-tekst {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #2064A8;
+    text-align: center !important;
+    font-family: Jua, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 124.994%;
+    margin: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.knop-item:hover {
+    opacity: 0.8;
+}
+
+footer {
+    position: relative;
+}
+
+.footer-container {
+    position: relative;
+    margin-top: 55px;
+}
+
+.footer-golf {
+    width: 100%;
+    height: auto;
+}
+
+.footer-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.footer-text h2 {
+    color: #1E63A9;
+    font-family: 'Jua', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 124.994%;
+    margin-top: 1em;
+}
+
+.contact-info {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 124.994%;
+    width: 350px;
+    margin: 5px 0;
+}
+
+.doe-mee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.doe-mee a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 133px;
+    height: 32px;
+    border-radius: 10px;
+    background: rgba(32, 100, 168, 0.90);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    margin-top: -2em;
+}
+
+.doe-mee span {
+    color: #FFF;
+    font-family: 'Jua', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    white-space: nowrap;
+    text-align: center;
+}
+
+body.hoewerkthet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.brug {
+    width: 307px;
+    height: 179px;
+    flex-shrink: 0;
+    display: block;
+    margin: 20px auto;
+    margin-top: 1.7em;
+}
+
+.brug-tekst {
+    width: 295px;
+    color: #3F8ABC;
+    font-family: 'Jua', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+    margin: 0 auto;
+    margin-left: 27px;
+    text-align: left;
+    margin-bottom: -10px;
+}
+
+.brug-tekst p {
+    margin-bottom: 5px;
+    text-align: left;
+    width: 295px;
+}
+
+.hoewerkthet header img {
+    margin-top: 3em;
+}
+
+.hoewerkthet .nav-menu a:nth-child(2),
+.hoewerkthet .nav-menu a:nth-child(3) {
+    margin-top: -12.5px;
+}
+
+.hoewerkthet .nav-menu a:nth-child(2) {
+    left: 8px;
+}
+
+.product main div p:nth-of-type(1) {
+    color: #3F8ABC;
+    font-family: Jua;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 302px;
+    text-align: left;
+    margin-left: 1.8em;
+}
+
+.product main img:nth-of-type(3) {
+    width: 375px;
+    height: 344px;
+    flex-shrink: 0;
+    margin-top: 2em;
+}
+
+.golfslag-container {
+    position: relative;
+    width: 375px;
+    height: 360px;
+    margin-top: 40px;
+}
+
+.golfslag-afbeelding {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.golfslag-content {
+    color: #265C92;
+    position: absolute;
+    top: 46%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-family: Jua;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    width: 80%;
+}
+
+.golfslag-tekst {
+    color: rgba(38, 92, 146, 0.90);
+    text-align: center;
+    font-family: Jua;
+    font-size: 15px;
+    font-style: normal;
+    width: 350px;
+    font-weight: 400;
+    line-height: 124.994%;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    color: #265C92E5;
+}
+
+.missionbottle-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 80%;
+}
+
+.missionbottle-afbeelding {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    top: 2em;
+    left: 1.5em;
+}
+
+.missionbottle-tekst {
+    font-family: Jua;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 124.994%;
+    margin-top: 10px;
+    position: absolute;
+    top: 2.2em;
+    right: -12.4em;
+    z-index: 1000;
+}
+
+.lijn-container {
+    margin-top: 35px;
+    margin-bottom: 2.5em;
+}
+
+.uitzicht {
+    width: 325px;
+    height: 179px;
+    flex-shrink: 0;
+    display: block;
+    margin: 20px auto;
+    margin-top: 1.8em;
+}
+
+.uitzicht {
+    width: 87%;
+    display: block;
+    margin: 0 auto;
+}
+
+.productvierkantcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+}
+
+.product-image {
+    width: 330px;
+    height: 248px;
+}
+
+.text-container {
+    position: absolute;
+    color: #3F8ABC;
+    font-family: 'Jua', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    text-align: left;
+    top: 88.5em;
+}
+
+.product-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.button-image {
+    left: 5.5em;
+    bottom: 0.7em;
+
+}
+
+.button-text {
+    position: absolute;
+    color: #FFF;
+    font-family: 'Jua', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    left: 10.3em;
+    bottom: 2.1em;
+}
+
+.product .knoppen .knop-item p:first-of-type {
+    left: 6.5em;
+    text-align: center;
+    color: #265C92E5;
+}
+
+.product .footer-text p:first-of-type {
+    color: white !important;
+    font-size: 17px !important;
+    text-align: center;
+}
+
+.product .nav-menu a:nth-child(2),
+.product .nav-menu a:nth-child(3) {
+    margin-top: -12.5px;
+}
+
+.uitzichtdoemee {
+    width: 325px;
+    height: 179px;
+    flex-shrink: 0;
+    display: block;
+    margin: 20px auto;
+    margin-top: 1.8em;
+    width: 87%;
+    display: block;
+    margin: 0 auto;
+}
+
+.doemeeuitzicht {
+    margin-top: 2em;
+}
+
+.doemee main>div>p:first-of-type {
+    width: 80%;
+    text-align: left;
+    margin-left: 1.2em;
+    margin-top: 1em;
+    margin-bottom: -1em;
+}
+
+.doemeevierkantcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    margin-bottom: -1.8em;
+    position: relative;
+}
+
+.doemee-image {
+    width: 80%;
+    object-fit: cover;
+}
+
+.tekst-container {
+    position: absolute;
+    color: #3F8ABC;
+    font-family: 'Jua', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.doemee-button {
+    flex-shrink: 0;
+    left: 4.5em;
+}
+
+.button-tekst {
+    color: white;
+    font-family: 'Jua', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    z-index: 1000;
+    position: relative;
+    top: -42px;
+    left: -114px;
+}
+
+.golfboven {
+    position: relative;
+}
+
+.golfboven img {
+    width: 100%;
+    position: relative;
+    top: 50px;
+    margin-bottom: 6em;
+}
+
+.tekst-overheen {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #4278AE;
+    font-family: 'Jua', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 302px;
+    text-align: center;
+}
